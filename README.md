@@ -1,0 +1,2 @@
+# Projekt_mistrz_umys-u
+Mastermind jest jedną z popularnych niegdyś gier. Gra polega na odgadnięciu 4 ukrytych kul. Gra zostanie rozwiązana, jeśli w ciągu 6 tur gracz odgadnie te kule. W każdej turze gracz wybiera 4 kule, po czym sprawdza czy trafił. Każda prawidłowo odgadnięta kula (kula o właściwym kolorze na właściwym miejscu) sygnalizowana jest czarną kropką. Jeśli gracz odgadł kolor kuli, nie odgadł zaś jej lokalizacji, jest to sygnalizowane białą kropką. Gracz nie wie, które kule są właściwe, które zaś nie.
