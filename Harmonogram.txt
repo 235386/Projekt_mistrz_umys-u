@@ -1,0 +1,27 @@
+Przedstawiam etapy pisania projektu:
+
+Najpierw zaprojektujemy obiekt kodu komputera o nastêpuj¹cej strukturze:
+Obiekt posiada metody:
+Inicjuj - inicjuje tablicê tz liczbami pseudolosowymi z zakresu od 0 do 5
+Wyswietl - wyœwietla zawartoœæ tablicy tz w formie kolorowych prostok¹tów na bie¿¹cej pozycji kursora. U¿ycie tej metody bêdzie wiêc polega³o na ustawieniu pozycji wydruku w po¿¹danym miejscu ekranu, a nastêpnie wywo³aniu Wyswietl.
+Oceniaj - porównuje kod podany jako parametr wywo³ania metody z kodem w polu tz i wyœwietla na bie¿¹cej pozycji wydruku w okienku jego ocenê w postaci gwiazdek czarnych (zgodnoœæ kodu i pozycji) oraz bia³ych (zgodnoœæ tylko kodu).
+
+Na podstawie obiektu TKod_z tworzymy obiekt pochodny TKod_t obs³uguj¹cy kod gracza.
+
+W nowym obiekcie pokrywamy metodê Inicjuj, która ma odczytaæ z klawiatury kod gracza i odpowiednio ustawiæ dziedziczon¹ tablicê tz oraz Wyswietl, która przyjmuje dodatkowy parametr steruj¹cy widocznoœci¹ i pozycj¹ ramki kursora.
+
+
+W dalszej kolejnoœci tworzymy obiekt gry zawieraj¹cy w sobie utworzone wczeœniej dwa obiekty:
+
+Obiekt ten zawiera kolejno nastêpuj¹ce sk³adniki:
+z - tablica kodu komputera
+t - tablica kodu gracza
+runda - numer rundy rozgrywki
+Ocen_t - metoda dokonuje ewaluacji wprowadzonego przez gracza kodu t. Wyœwietla na bie¿¹cej pozycji wydruku na ekranie odpowiedni¹ iloœæ gwiazdek czarnych i bia³ych. Jest to metoda prywatna obiektu.
+t_rowne_z - zwraca wartoœæ true, jeœli kod gracza jest identyczny z kodem komputera.
+KoniecGry - testuje warunek zakoñczenia gry i jeœli wyst¹pi³, zwraca true. Wyœwietla równie¿ odpowiednie napisy informacyjne z gratulacjami lub o zakoñczeniu gry.
+StronaTytulowa - wyœwietla ekran startowy i czeka na naciœniêcie klawisza.
+Graj - obs³uguje ca³¹ grê.
+JeszczeRaz - zwraca wartoœæ true, jeœli po zakoñczeniu gry gracz chce zagraæ ponownie.
+
+
